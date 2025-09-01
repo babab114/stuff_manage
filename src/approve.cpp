@@ -1,3 +1,7 @@
+#include <iostream>
+#include "approve.h"
+using namespace std;
+
 void processApplications(const vector<Item>& itemList) {
     int password;
     cout << "관리자 password를 입력하세요 : ";
