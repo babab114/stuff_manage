@@ -5,6 +5,11 @@ using namespace std;
 
 int main() {
     vector<Item> itemList;
+    
+    if (!loadItemListFromCSV("staff_list_CSV.csv", itemList)) {
+        cerr << "오류: CSV 파일 로드 실패. 프로그램을 종료합니다.\n";
+        return 1;
+    }
 
     int choice;
     while (true) {
@@ -34,4 +39,5 @@ int main() {
     }
     return 0;
 }
+
 
